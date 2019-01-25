@@ -4,11 +4,13 @@ pipeline {
     stage('Fluffy Build') {
       steps {
         echo 'Placeholder'
+        sh 'echo "Another Placceholder"'
       }
     }
     stage('Fluffy Test') {
       steps {
-        echo 'Placeholder'
+        sleep 5
+        echo 'SUCCESS'
       }
     }
     stage('Fluffy Deploy') {
